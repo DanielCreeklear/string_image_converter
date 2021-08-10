@@ -1,0 +1,16 @@
+# Python virtual env
+venv/
+
+# Images
+*.jpeg
+*.jpg
+*.png
+
+# PyCharm
+.idea
+
+# PyTest
+.pytest_cache
+
+# Python
+*__pycache__
