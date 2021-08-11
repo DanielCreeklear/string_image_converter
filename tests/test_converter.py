@@ -4,7 +4,8 @@ from pytest import mark
 
 @mark.usefixtures('image_processing')
 def test_should_return_jpeg_image_object(image_processing):
-    assert type(image_processing.open_image('./example.jpg')) is JpegImageFile
+    image_processing.open_image('./example.jpg')
+    assert type(image_processing.image) is JpegImageFile
 
 
 @mark.usefixtures('image_processing')
