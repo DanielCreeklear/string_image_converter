@@ -10,7 +10,7 @@ def test_should_return_jpeg_image_object(image_processing):
 
 @mark.usefixtures('image_processing')
 def test_should_return_image_with_new_size(image_processing):
-    assert image_processing.resize(100) == (10, 10)
+    assert image_processing.resize_image(100) == (10, 10)
 
 
 @mark.usefixtures('image_processing')
