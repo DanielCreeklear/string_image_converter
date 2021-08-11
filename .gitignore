@@ -6,6 +6,9 @@ venv/
 *.jpg
 *.png
 
+# txt
+*.txt
+
 # PyCharm
 .idea
 
