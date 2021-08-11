@@ -21,7 +21,7 @@ def test_should_return_image_gray_scale(image_processing):
     assert type(image_processing.grayify()) is Image
 
 
-@mark.usefixtures('example_image')
+@mark.usefixtures('image_processing')
 def test_should_return_image_string(image_processing):
     image_processing.open_image('./example.jpg')
     assert type(image_processing.pixels_to_ascii()) is str
