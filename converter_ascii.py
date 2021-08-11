@@ -48,8 +48,9 @@ class ImageProcessing:
 
 
 path = sys.argv[1]
+width = int(sys.argv[2])
 image_jpeg = ImageProcessing()
 image_jpeg.open_image(path)
-image_jpeg.resize_image(100)
+image_jpeg.resize_image(width)
 image_jpeg.print_terminal()
 image_jpeg.save()
