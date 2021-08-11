@@ -1,4 +1,5 @@
 from PIL.JpegImagePlugin import JpegImageFile
+from PIL.Image import Image
 from pytest import mark
 
 
@@ -17,7 +18,7 @@ def test_should_return_image_with_new_size(image_processing):
 @mark.usefixtures('image_processing')
 def test_should_return_image_gray_scale(image_processing):
     image_processing.open_image('./example.jpg')
-    assert type(image_processing.grayify()) is JpegImageFile
+    assert type(image_processing.grayify()) is Image
 
 
 @mark.usefixtures('example_image')
