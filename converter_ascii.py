@@ -48,7 +48,11 @@ class ImageProcessing:
 
 
 path = sys.argv[1]
-width = int(sys.argv[2])
+width = 100
+try:
+    width = int(sys.argv[2])
+except ValueError:
+    ...
 image_jpeg = ImageProcessing()
 image_jpeg.open_image(path)
 image_jpeg.resize_image(width)
